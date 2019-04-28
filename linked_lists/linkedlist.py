@@ -27,7 +27,23 @@ class LinkedList:
         right_node = node_to_remove.next
         current_node.next = right_node
         del node_to_remove
-        
+
+    def reverse(self):
+        prev = None
+        curr = self.headNode
+        nex = curr.next
+
+        while curr:
+            curr.next = prev
+            prev = curr
+            curr = nex
+            if nex:
+                nex = nex.next
+
+        self.headNode = prev
+
+
+
     # Print the linked list
     def listprint(self):
         node = self.headNode

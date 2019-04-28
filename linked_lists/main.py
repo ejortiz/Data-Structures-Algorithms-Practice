@@ -13,4 +13,7 @@ linked_list.append(node_2)
 linked_list.prepend(node_3)
 linked_list.insert(node_4, node_1)
 linked_list.remove(node_0)
+
+linked_list.reverse()
+
 linked_list.listprint()
